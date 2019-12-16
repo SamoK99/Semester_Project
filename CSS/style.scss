@@ -1,0 +1,920 @@
+body{
+    margin: 0;
+    background-color: transparent;
+    background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=starry-sky-998641.jpg&fm=jpg");
+    background-size: 100% 100%;
+}
+#overlay, #overlay2{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    #about_infobox{
+        border: 1px solid #00FFE6;
+        background-color: black;
+        height: 430px;
+        width: 750px;
+        border-radius: 25px;
+        color: white;
+        overflow: hidden;
+        z-index: 5;
+        margin: auto;
+        margin-top: 150px;
+    }
+    #contact_infobox{
+        border: 1px solid #00FFE6;
+        background-color: black;
+        height: 430px;
+        width: 750px;
+        border-radius: 25px;
+        color: white;
+        overflow: hidden;
+        z-index: 5;
+        margin: auto;
+        margin-top: 150px;
+    }
+  }
+h1{
+    margin-left: 50px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 3;
+    color: white;
+    /*font-family: 'Wallpoet', cursive;*/
+    font-family: 'Space Mono', monospace;
+    text-shadow: 2px 2px 2px black;
+}
+h2{
+    font-size: 1vw;
+    font-family: 'Space Mono', monospace;
+    text-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    transition: 1s;
+}
+h2:hover{
+    color: #00FFE6;
+    font-size: 1.1vw;
+}
+h3{
+    margin: 0;
+    margin-left: 100px;
+    margin-top: 3px;
+    font-family: 'Darker Grotesque', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    
+}
+p{
+    margin:0 0 5px 0;
+    font-size: 1.2em;
+    font-family: 'Darker Grotesque', sans-serif;
+    /*font-family: 'Space Mono', monospace;*/
+    
+}
+#p2{
+    font-size: 1.2em;
+}
+
+
+header{
+    margin-top: 10px;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    
+
+    #menuButton{
+        height: 50px;
+        flex-grow: 2;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+    }
+
+    #nav{
+        height: 50px;
+        flex-grow: 10;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #navbox_holder{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50px;
+            width: 50%;
+            border-radius: 25px;
+            border-right: 1px solid #00FFE6;
+            border-left: 1px solid #00FFE6;
+            position: relative;
+            #navbox1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 250px;
+                height: 50px;
+                border-radius:25px;
+                transition: 0.8s;
+                margin-right: 200px;
+                z-index: 1;
+                background-color: rgba(240, 231, 240, 0.486);
+                a{
+                    margin-top: 4px;
+                }
+            }
+            #navbox1:hover{
+                background-color:rgba(255, 255, 255, 0.74) ;
+                z-index: 1;
+            }
+            #navbox2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 50%;
+                border-right: 2px solid #00FFE6;
+                border-left: 2px solid #00FFE6;
+                border-radius: 25px;
+                z-index: 1;
+                transition: 0.8s;
+                position: absolute;
+                background-color: rgb(138, 135, 138);
+                a{
+                    margin-top: 4px;
+                }
+            }
+            #navbox2:hover{
+                background-color:rgb(236, 226, 226) ;
+            }
+            #navbox3{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 250px;
+                height: 50px;
+                border-radius:25px;
+                transition: 0.8s;
+                background-color: rgba(240, 231, 240, 0.486);
+                a{
+                    margin-top: 4px;
+                }
+            }
+            #navbox3:hover{
+                background-color:rgba(255, 255, 255, 0.74) ;
+            }
+            
+        }
+
+        
+    }
+
+    #logo{
+        height: 50px;
+        flex-grow: 2;
+        background-color: transparent;
+    }
+}
+
+#planet_section{
+    height: 600px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+
+    #planet_column{
+        background-color: transparent;
+        height: 600px;
+        width: 500px;
+        /*border: 1px solid yellow;*/
+        
+        
+
+        #Neptune,#Saturn,#Mars,#Jupiter,#Sun,#Venus,#Mercury,#Earth,#UrAnus{
+            background-color: transparent;
+            height: 50px;
+            width: 50px;
+            margin-top: 30px;
+        }
+        #Neptune{
+            height: 158px;
+            width: 158px;
+            margin-left: 50px;
+            
+            .Neptune_circle, .Neptune_circle_moving{
+                border-radius: 100%;
+                object-fit: cover;
+                position: relative;
+                transition: 1s all ease;
+                }
+                .Neptune_info{
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: visibility 0s, opacity 0.5s linear;
+                    border: 1px solid #00FFE6;
+                    background-color: black;
+                    background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=starry-sky-998641.jpg&fm=jpg");
+                background-size: 100% 100%;
+                    height: 430px;
+                    width: 750px;
+                    border-radius: 25px;
+                    position: absolute;
+                    color: white;
+                    overflow: hidden;
+                    margin: -200px 0 0 220px;
+                    z-index: 5;
+                    .Neptune_boxholder{
+                        height: 440px;
+                        width: 750px;
+                        background-color: transparent;
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        text-align: center;
+                        text-justify: auto;
+                        #Neptune_box{
+                            background-color: transparent;
+                            border: 0.5px solid black;
+                            height: 400px;
+                            width: 320px;
+                            margin-left: 330px;
+                            display: grid;
+                            
+                            #Neptune_basicinfo{
+                                width: 380px;
+                                height: 100px;
+                                position: absolute;
+                                z-index: 9;
+                                background-color: transparent;
+                                margin-left: -500px;
+                                margin-top: 30%;
+                                text-align: left;
+                            }
+                            
+                        }
+                        #Neptune_box_planet{
+                            background-color: transparent;
+                            height: 250px;
+                            width: 250px;
+                            margin-left: -155px;
+                            margin-bottom: 300px;
+                        }
+                    }
+                }
+                .Neptune_circle:hover +.Neptune_info{
+                    visibility: visible;
+                    opacity: 1;
+                    
+                }
+                .Neptune_circle:hover{
+                    height: 220px;
+                    width: 220px;
+                }
+        }
+        #Mars{
+            height: 95px;
+            width: 95px;
+            margin: 0 0 50px 390px;
+            .Mars_circle, .Mars_circle_moving{
+                border-radius: 100%;
+                object-fit: cover;
+                position: relative;
+                transition: 1s all ease;
+            }
+            .Mars_info{
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.5s linear;
+                border: 1px solid #00FFE6;
+                background-color: black;
+                background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=starry-sky-998641.jpg&fm=jpg");
+                background-size: 100% 100%;
+                height: 430px;
+                width: 750px;
+                border-radius: 25px;
+                position: absolute;
+                color: white;
+                overflow: hidden;
+                margin: -200px 0 0 130px;
+                z-index: 5;
+                .Mars_boxholder{
+                    height: 440px;
+                    width: 750px;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    text-align: center;
+                    text-justify: auto;
+                    #Mars_box{
+                        background-color: transparent;
+                        border: 0.5px solid black;
+                        height: 400px;
+                        width: 320px;
+                        margin-left: 330px;
+                        display: grid;
+                        #Mars_basicinfo{
+                            width: 380px;
+                            height: 100px;
+                            position: absolute;
+                            z-index: 9;
+                            background-color: transparent;
+                            margin-left: -500px;
+                            margin-top: 30%;
+                            text-align: left;
+                        }
+                    }
+                    #Mars_box_planet{
+                        background-color: transparent;
+                        height: 250px;
+                        width: 250px;
+                        margin-left: -155px;
+                        margin-bottom: 300px;
+                    }
+                }
+            }
+            .Mars_circle:hover +.Mars_info{
+                visibility: visible;
+                opacity: 1;
+                
+            }
+            .Mars_circle:hover{
+                height: 120px;
+                width: 120px;
+            }
+        }
+        #Saturn{
+            height: 160px;
+            width: 300px;
+            margin: 0 0 0 100px;
+            .Saturn_circle, .Saturn_circle_moving{
+                border-radius: 100%;
+                object-fit: cover;
+                position: relative;
+                transition: 1s all ease;
+            }
+            .Saturn_info{
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.5s linear;
+                border: 1px solid #00FFE6;
+                background-color: black;
+                background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=starry-sky-998641.jpg&fm=jpg");
+                background-size: 100% 100%;
+                height: 430px;
+                width: 750px;
+                border-radius: 25px;
+                position: absolute;
+                color: white;
+                overflow: hidden;
+                margin: -600px 0 0 250px;
+                z-index: 5;
+                .Saturn_boxholder{
+                    height: 440px;
+                    width: 750px;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    text-align: center;
+                    text-justify: auto;
+                    #Saturn_box{
+                        background-color: transparent;
+                        border: 0.5px solid black;
+                        height: 400px;
+                        width: 320px;
+                        margin-left: 330px;
+                        display: grid;
+                        #Saturn_basicinfo{
+                            width: 380px;
+                            height: 100px;
+                            position: absolute;
+                            z-index: 9;
+                            background-color: transparent;
+                            margin-left: -500px;
+                            margin-top: 30%;
+                            text-align: left;
+                        }
+                    }
+                    #Saturn_box_planet{
+                        background-color: transparent;
+                        height: 250px;
+                        width: 250px;
+                        margin-left: -155px;
+                        margin-bottom: 300px;
+                    }
+                }
+            }
+            .Saturn_circle:hover +.Saturn_info{
+                visibility: visible;
+                opacity: 1;
+                
+            }
+            .Saturn_circle:hover{
+                height: 320px;
+                width: 320px;
+            }
+        }
+        #Mercury{
+            height: 55px;
+            width: 55px;
+            margin-left: 290px;
+            .Mercury_circle, .Mercury_circle_moving{
+                border-radius: 100%;
+                object-fit: cover;
+                position: relative;
+                transition: 1s all ease;
+            }
+            .Mercury_info{
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.5s linear;
+                height: 430px;
+                width: 750px;
+                border-radius: 25px;
+                border: 1px solid #00FFE6;
+                background-color: black;
+                background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=starry-sky-998641.jpg&fm=jpg");
+                background-size: 100% 100%;
+                position: absolute;
+                color: white;
+                overflow: hidden;
+                margin-left: -400px;
+                margin-top: 0px;
+                z-index: 5;
+                text-align: center;
+                .Mercury_boxholder{
+                    height: 440px;
+                    width: 750px;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    text-align: center;
+                    text-justify: auto;
+                    #Mercury_box{
+                        background-color: transparent;
+                        border: 0.5px solid black;
+                        height: 400px;
+                        width: 320px;
+                        margin-left: 330px;
+                        display: grid;
+                        #Mercury_basicinfo{
+                            width: 380px;
+                            height: 100px;
+                            position: absolute;
+                            z-index: 9;
+                            background-color: transparent;
+                            margin-left: -500px;
+                            margin-top: 30%;
+                            text-align: left;
+                        }
+                    }
+                    #Mercury_box_planet{
+                        background-color: transparent;
+                        height: 250px;
+                        width: 250px;
+                        margin-left: -155px;
+                        margin-bottom: 300px;
+                    }
+                }
+            }
+            
+            .Mercury_circle:hover +.Mercury_info{
+                visibility: visible;
+                opacity: 1;
+                
+            }
+            .Mercury_circle:hover{
+                height: 90px;
+                width: 90px;
+            }
+        }
+        
+        #Sun{
+            height: 237px;
+            width: 237px;
+            margin-left: 80px;;
+            margin-top: 40px;
+            .Sun_circle, .Sun_circle_moving{
+                border-radius: 100%;
+                object-fit: cover;
+                position: relative;
+                transition: 1s all ease;
+            }
+            .Sun_info{
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.5s linear;
+                height: 430px;
+                width: 750px;
+                border-radius: 25px;
+                border: 1px solid #00FFE6;
+                background-color: black;
+                background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=starry-sky-998641.jpg&fm=jpg");
+                background-size: 100% 100%;
+                position: absolute;
+                color: white;
+                overflow: hidden;
+                margin: -400px 0 0 180px;
+                z-index: 5;
+                .Sun_boxholder{
+                    height: 440px;
+                    width: 750px;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    text-align: center;
+                    text-justify: auto;
+                    #Sun_box{
+                        background-color: transparent;
+                        border: 0.5px solid black;
+                        height: 400px;
+                        width: 320px;
+                        margin-left: 330px;
+                        display: grid;
+                        #Sun_basicinfo{
+                            width: 380px;
+                            height: 100px;
+                            position: absolute;
+                            z-index: 9;
+                            background-color: transparent;
+                            margin-left: -500px;
+                            margin-top: 30%;
+                            text-align: left;
+                        }
+                    }
+                    #Sun_box_planet{
+                        background-color: transparent;
+                        height: 250px;
+                        width: 250px;
+                        margin-left: -155px;
+                        margin-bottom: 300px;
+                    }
+                }
+            }
+            
+            .Sun_circle:hover +.Sun_info{
+                visibility: visible;
+                opacity: 1;
+                
+            }
+            .Sun_circle:hover{
+                height: 350px;
+                width: 350px;
+            }
+        }
+        #Venus{
+            height: 76px;
+            width: 76px;
+            margin-left: 90px;
+            margin-top: 90px;
+            .Venus_circle, .Venus_circle_moving{
+                border-radius: 100%;
+                object-fit: cover;
+                position: relative;
+                transition: 1s all ease;
+            }
+            .Venus_info{
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.5s linear;
+                height: 430px;
+                width: 750px;
+                border-radius: 25px;
+                border: 1px solid #00FFE6;
+                background-color: black;
+                background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=starry-sky-998641.jpg&fm=jpg");
+                background-size: 100% 100%;
+                position: absolute;
+                color: white;
+                overflow: hidden;
+                margin: -500px 0 0 115px;
+                z-index: 5;
+                .Venus_boxholder{
+                    height: 440px;
+                    width: 750px;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    text-align: center;
+                    text-justify: auto;
+                    #Venus_box{
+                        background-color: transparent;
+                        border: 0.5px solid black;
+                        height: 400px;
+                        width: 320px;
+                        margin-left: 330px;
+                        display: grid;
+                        #Venus_basicinfo{
+                            width: 380px;
+                            height: 100px;
+                            position: absolute;
+                            z-index: 9;
+                            background-color: transparent;
+                            margin-left: -500px;
+                            margin-top: 30%;
+                            text-align: left;
+                        }
+                    }
+                    #Venus_box_planet{
+                        background-color: transparent;
+                        height: 250px;
+                        width: 250px;
+                        margin-left: -155px;
+                        margin-bottom: 300px;
+                    }
+                }
+            }
+            
+            .Venus_circle:hover +.Venus_info{
+                visibility: visible;
+                opacity: 1;
+                
+            }
+            .Venus_circle:hover{
+                height: 110px;
+                width: 110px;
+            }
+        }
+        #Jupiter{
+            height: 140px;
+            width: 140px;
+            margin-left: 100px;
+            .Jupiter_circle, .Jupiter_circle_moving{
+                border-radius: 100%;
+                object-fit: cover;
+                position: relative;
+                transition: 1s all ease;
+            }
+            .Jupiter_info{
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.5s linear;
+                height: 430px;
+                width: 750px;
+                border-radius: 25px;
+                border: 1px solid #00FFE6;
+                background-color: black;
+                background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=starry-sky-998641.jpg&fm=jpg");
+                background-size: 100% 100%;
+                position: absolute;
+                color: white;
+                overflow: hidden;
+                margin: -200px 0 0 -760px;
+                z-index: 5;
+                .Jupiter_boxholder{
+                    height: 440px;
+                    width: 750px;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    text-align: center;
+                    text-justify: auto;
+                    #Jupiter_box{
+                        background-color: transparent;
+                        border: 0.5px solid black;
+                        height: 400px;
+                        width: 320px;
+                        margin-left: 330px;
+                        display: grid;
+                        #Jupiter_basicinfo{
+                            width: 380px;
+                            height: 100px;
+                            position: absolute;
+                            z-index: 9;
+                            background-color: transparent;
+                            margin-left: -500px;
+                            margin-top: 30%;
+                            text-align: left;
+                        }
+                    }
+                    #Jupiter_box_planet{
+                        background-color: transparent;
+                        height: 250px;
+                        width: 250px;
+                        margin-left: -155px;
+                        margin-bottom: 300px;
+                    }
+                }
+            }
+            .Jupiter_circle:hover +.Jupiter_info{
+                visibility: visible;
+                opacity: 1;
+                
+            }
+            .Jupiter_circle:hover{
+                height: 250px;
+                width: 250px;
+            }
+        }
+        #Earth{
+            width: 77px;
+            height: 77px;
+            margin-top: 100px;
+            .Earth_circle, .Earth_circle_moving{
+                border-radius: 100%;
+                object-fit: cover;
+                position: relative;
+                transition: 1s all ease;
+            }
+            .Earth_info{
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.5s linear;
+                height: 430px;
+                width: 750px;
+                border-radius: 25px;
+                border: 1px solid #00FFE6;
+                background-color: black;
+                background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=starry-sky-998641.jpg&fm=jpg");
+                background-size: 100% 100%;
+                position: absolute;
+                color: white;
+                overflow: hidden;
+                margin: -350px 0 0 -760px;
+                .Earth_boxholder{
+                    height: 440px;
+                    width: 750px;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    text-align: center;
+                    text-justify: auto;
+                    #Earth_box{
+                        background-color: transparent;
+                        border: 0.5px solid black;
+                        height: 400px;
+                        width: 320px;
+                        margin-left: 330px;
+                        display: grid;
+                        #Earth_basicinfo{
+                            width: 380px;
+                            height: 100px;
+                            position: absolute;
+                            z-index: 9;
+                            background-color: transparent;
+                            margin-left: -500px;
+                            margin-top: 30%;
+                            text-align: left;
+                        }
+                    }
+                    #Earth_box_planet{
+                        background-color: transparent;
+                        height: 250px;
+                        width: 250px;
+                        margin-left: -155px;
+                        margin-bottom: 300px;
+                    }
+                }
+            }
+            .Earth_circle:hover +.Earth_info{
+                visibility: visible;
+                opacity: 1;
+                
+            }
+            .Earth_circle:hover{
+                height: 170px;
+                width: 170px;
+            }
+        }
+        #UrAnus{
+            height: 90px;
+            width: 160px;
+            margin-left: 200px;
+            .UrAnus_circle, .UrAnus_circle_moving{
+                border-radius: 100%;
+                object-fit: cover;
+                position: relative;
+                transition: 1s all ease;
+            }
+            .UrAnus_info{
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.5s linear;
+                height: 430px;
+                width: 750px;
+                border-radius: 25px;
+                border: 1px solid #00FFE6;
+                background-color: black;
+                background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=starry-sky-998641.jpg&fm=jpg");
+                background-size: 100% 100%;
+                position: absolute;
+                color: white;
+                overflow: hidden;
+                margin: -500px 0 0 -760px;
+                .UrAnus_boxholder{
+                    height: 440px;
+                    width: 750px;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    text-align: center;
+                    text-justify: auto;
+                    #UrAnus_box{
+                        background-color: transparent;
+                        border: 0.5px solid black;
+                        height: 400px;
+                        width: 320px;
+                        margin-left: 330px;
+                        display: grid;
+                        #UrAnus_basicinfo{
+                            width: 380px;
+                            height: 100px;
+                            position: absolute;
+                            z-index: 9;
+                            background-color: transparent;
+                            margin-left: -500px;
+                            margin-top: 30%;
+                            text-align: left;
+                        }
+                    }
+                    #UrAnus_box_planet{
+                        background-color: transparent;
+                        height: 250px;
+                        width: 250px;
+                        margin-left: -155px;
+                        margin-bottom: 300px;
+                    }
+                }
+            }
+            .UrAnus_circle:hover +.UrAnus_info{
+                visibility: visible;
+                opacity: 1;
+                
+            }
+            .UrAnus_circle:hover{
+                height: 220px;
+                width: 220px;
+            }
+        }
+    }
+}
+
+footer{
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #footerbox_holder{
+        display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50px;
+            width: 30%;
+            background-color: rgba(240, 231, 240, 0.486);
+            border-radius: 25px;
+            border-right: 1px solid #00FFE6;
+            border-left: 1px solid #00FFE6;
+                #footerbox1{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 100%;
+                }
+                #footerbox2{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50px;
+                    width: 200px;
+                    border-right: 2px solid #00FFE6;
+                    border-left: 2px solid #00FFE6;
+                    border-radius: 25px;
+                    img{
+                        transition: 1s;
+                    }
+                    img:hover{
+                        width: 85%;
+                        height: 85%;
+                        margin-left: 10px;
+                    }
+                }
+                #footerbox3{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 100%;
+                }
+    }
+}
+
