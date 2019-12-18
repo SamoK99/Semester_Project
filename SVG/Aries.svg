@@ -1,0 +1,21 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="329.065" height="199.51" viewBox="0 0 329.065 199.51">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <circle id="Ellipse_111" data-name="Ellipse 111" class="cls-1" cx="8.871" cy="8.871" r="8.871" transform="translate(311.322 181.767)"/>
+    <circle id="Ellipse_112" data-name="Ellipse 112" class="cls-1" cx="8.871" cy="8.871" r="8.871" transform="translate(147.376 142.92)"/>
+    <circle id="Ellipse_113" data-name="Ellipse 113" class="cls-1" cx="8.871" cy="8.871" r="8.871"/>
+    <path id="Path_72" data-name="Path 72" class="cls-2" d="M2.27,2.27,149.646,145.19l163.946,38.847" transform="translate(6.601 6.601)"/>
+  </g>
+</svg>

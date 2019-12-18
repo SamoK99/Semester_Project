@@ -1,0 +1,24 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="208.352" height="289.428" viewBox="0 0 208.352 289.428">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_73" data-name="Ellipse 73" class="cls-1" cx="8.596" cy="8.596" r="8.596" transform="translate(102.813)"/>
+  <circle id="Ellipse_74" data-name="Ellipse 74" class="cls-1" cx="8.596" cy="8.596" r="8.596" transform="translate(0 22.494)"/>
+  <circle id="Ellipse_75" data-name="Ellipse 75" class="cls-1" cx="8.596" cy="8.596" r="8.596" transform="translate(191.159 49.039)"/>
+  <circle id="Ellipse_76" data-name="Ellipse 76" class="cls-1" cx="8.596" cy="8.596" r="8.596" transform="translate(103.759 78.501)"/>
+  <circle id="Ellipse_77" data-name="Ellipse 77" class="cls-1" cx="8.596" cy="8.596" r="8.596" transform="translate(87.589 116.559)"/>
+  <circle id="Ellipse_78" data-name="Ellipse 78" class="cls-1" cx="8.596" cy="8.596" r="8.596" transform="translate(83.84 168.931)"/>
+  <circle id="Ellipse_79" data-name="Ellipse 79" class="cls-1" cx="8.596" cy="8.596" r="8.596" transform="translate(115.423 225.619)"/>
+  <circle id="Ellipse_80" data-name="Ellipse 80" class="cls-1" cx="8.596" cy="8.596" r="8.596" transform="translate(67.557 272.235)"/>
+  <path id="Path_67" data-name="Path 67" class="cls-2" d="M71.834,274.505l49.986-46.767L88.117,171.5,91.6,119.548l16.435-38.512L106.748,2.27l88.688,48.471L112.807,81.453,1.55,24.764l101.3-20.335" transform="translate(4.32 6.326)"/>
+</svg>

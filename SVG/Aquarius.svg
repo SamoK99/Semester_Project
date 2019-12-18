@@ -1,0 +1,19 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="212.271" height="232.652" viewBox="0 0 212.271 232.652">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Path_70" data-name="Path 70" class="cls-1" d="M195.54,2.27,2.27,215.922l176.488-27.413" transform="translate(7.23 7.23)"/>
+  <circle id="Ellipse_98" data-name="Ellipse 98" class="cls-2" cx="9.5" cy="9.5" r="9.5" transform="translate(193.27)"/>
+  <circle id="Ellipse_99" data-name="Ellipse 99" class="cls-2" cx="9.5" cy="9.5" r="9.5" transform="translate(0 213.652)"/>
+  <circle id="Ellipse_100" data-name="Ellipse 100" class="cls-2" cx="9.5" cy="9.5" r="9.5" transform="translate(176.488 186.239)"/>
+</svg>
