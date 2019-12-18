@@ -1,0 +1,13 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="52.18" height="52.18" viewBox="0 0 52.18 52.18">
+  <g id="Layer_1" data-name="Layer 1" transform="translate(0.5 0.5)">
+    <circle id="Ellipse_30" data-name="Ellipse 30" cx="25.59" cy="25.59" r="25.59" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+    <circle id="Ellipse_31" data-name="Ellipse 31" cx="15.185" cy="15.185" r="15.185" transform="translate(10.405 10.405)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_5" data-name="Line 5" y2="49.54" transform="translate(25.59 0.829)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.75"/>
+    <line id="Line_6" data-name="Line 6" x1="42.909" y1="24.779" transform="translate(4.144 13.209)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.75"/>
+    <line id="Line_7" data-name="Line 7" x1="24.779" y1="42.909" transform="translate(13.209 4.144)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.75"/>
+    <line id="Line_8" data-name="Line 8" x2="49.54" transform="translate(0.829 25.59)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.75"/>
+    <line id="Line_9" data-name="Line 9" y1="24.779" x2="42.909" transform="translate(4.144 13.209)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.75"/>
+    <line id="Line_10" data-name="Line 10" y1="42.909" x2="24.779" transform="translate(13.209 4.144)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.75"/>
+    <circle id="Ellipse_32" data-name="Ellipse 32" cx="8.06" cy="8.06" r="8.06" transform="translate(17.53 17.53)" fill="#fff"/>
+  </g>
+</svg>

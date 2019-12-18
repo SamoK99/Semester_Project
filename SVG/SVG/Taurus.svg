@@ -1,0 +1,21 @@
+<svg id="Taurus" xmlns="http://www.w3.org/2000/svg" width="181.125" height="279.76" viewBox="0 0 181.125 279.76">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_40" data-name="Ellipse 40" class="cls-1" cx="8.163" cy="8.163" r="8.163" transform="translate(164.799 127.798)"/>
+  <circle id="Ellipse_41" data-name="Ellipse 41" class="cls-1" cx="8.163" cy="8.163" r="8.163"/>
+  <path id="Path_60" data-name="Path 60" class="cls-2" d="M2.27,2.27l164.8,127.8L104.177,265.7" transform="translate(5.893 5.893)"/>
+  <path id="Path_61" data-name="Path 61" class="cls-2" d="M142.746,37.81,11.64,119.185" transform="translate(30.216 98.15)"/>
+  <circle id="Ellipse_42" data-name="Ellipse 42" class="cls-1" cx="8.163" cy="8.163" r="8.163" transform="translate(101.907 263.434)"/>
+  <circle id="Ellipse_43" data-name="Ellipse 43" class="cls-1" cx="8.163" cy="8.163" r="8.163" transform="translate(33.693 209.173)"/>
+</svg>
