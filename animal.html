@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Faster+One|Michroma|Space+Mono|Syncopate|Wallpoet&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Spirit Animal - SolarVerse</title>
+</head>
+<body>
+    <header>
+        <div id="menuButton"></div>
+        <div id="nav">
+            <div id="navbox_holder">
+                <div id="navbox1"><a href="#"><img src="SVG/Zodiac.svg" alt="Zodiac" width="50px" height="45px"></a></div>
+                <div id="navbox2"><a href="#"><img src="SVG/Solar.svg" alt="Solar" width="50px" height="45px"></a></div>
+                <div id="navbox3"><a href="#"><img src="SVG/Discoveries.svg" alt="Discoveries" width="50px" height="45px"></a></div>
+            </div>
+            
+        </div>
+        <div id="logo"></div>
+    </header>
+    
+    <div class="filter">
+    <div class="animal1">
+        <div class="col-2" id="aries" ><img src="IMG/animal/aries.png" alt="Hawk"><h4>Aries</h4></div>
+        <div class="col-2" id="taurus"><img src="IMG/animal/taurus.png" alt="Bear"><h4>Taurus</h4></div>
+        <div class="col-2" id="gemini"><img src="IMG/animal/gemini.png" alt="Deer"><h4>Gemini</h1></div>
+        <div class="col-2" id="cancer"><img src="IMG/animal/cancer.png" alt="Cancer"><h4>Cancer</h1></div>
+        <div class="col-2" id="leo"><img src="IMG/animal/leo.png" alt="Leo"><h4>Leo</h4></div>
+        <div class="col-2" id="virgo"><img src="IMG/animal/virgo.png" alt="Virgo"><h4>Virgo</h4></div>    
+    </div>
+    <div class="animal2">
+            <div class="col-2" id="libra"><img src="IMG/animal/libra.png" alt="Libra"><h4>Libra</h4></div>
+            <div class="col-2" id="scorio"><img src="IMG/animal/scorpio.png" alt="Scorpio"><h4>Scorpio</h4></div>
+            <div class="col-2" id="sagittarius"><img src="IMG/animal/sagittarius.png" alt="Sagittarius"><h4>Sagittarius</h4></div>
+            <div class="col-2" id="capricorn"><img src="IMG/animal/capricorn.png" alt="Capricorn"><h4>Capricorn</h4></div>
+            <div class="col-2" id="aquarius"><img src="IMG/animal/aquarius.png" alt="Aquarius"><h4>Aquarius</h4></div>
+            <div class="col-2" id="pisces"><img src="IMG/animal/pisces.png" alt="Pisces"><h4>Pisces</h4></div>
+        </div>
+    </div>
+    
+    <footer>
+        <div id="footerbox_holder">
+            <div id="footerbox1"><h2 onclick="on()">About Us</h2><div id="overlay" onclick="off()">
+                <div id="about_infobox">
+                    <h5>Creators:</h5>
+                    <h5>Benjamin Olsen</h5>
+                    <h5>Kristián Geci</h5>
+                    <h5>Olivia Owczarczyk</h5>
+                    <h5>Samuel Kuzma</h5>
+                    <div id="space"></div>
+                    <h5>Education:</h5>
+                    <h5>1st semester Multimedia Designers</h5>
+                </div></div>
+                </div>
+            <div id="footerbox2"><a href="https://illvid.dk/"><img src="SVG/IV_logo.svg" alt="IV_logo" width="100%" height="100%"></a></div>
+            <div id="footerbox3"><h2 onclick="on2()">Contact Us</h2><div id="overlay2" onclick="off2()">
+                <div id="contact_infobox">
+                    <h5>Adress: Spangsbjerg Kirkevej 103 6700</h5>
+                    <h5>Country: Denmark</h5>
+                    <h5>City of Residence: Esbjerg</h5>
+                </div></div>
+                
+            </div>
+            
+        </div>
+        <div id="footerbox_holder2">
+            <button onclick="window.location.href = './trait.html';"id="trait"><img src="IMG/trait.png" width="25px" height="25px"><h5>Main Trait</h5></button>
+            <button onclick="window.location.href = './color.html';" id="color"><img src="IMG/color.png" width="25px" height="25px"><h5>Lucky Color</h5></button>
+            <button onclick="window.location.href = './animal.html';" id="animal"><img src="IMG/animal.png" width="25px" height="25px"><h5>Spirit Animal</p2></button>
+            <button onclick="window.location.href = './comp.html';"id="comp"><img src="IMG/comp.png" width="25px" height="25px"><h5>Compatibility</h5></button>
+        </div>
+    </footer>
+    <script>
+        function on() {
+          document.getElementById("overlay").style.display = "block";
+        }
+        
+        function off() {
+          document.getElementById("overlay").style.display = "none";
+        }
+        </script>
+    <script>
+        function on2() {
+          document.getElementById("overlay2").style.display = "block";
+        }
+        
+        function off2() {
+          document.getElementById("overlay2").style.display = "none";
+        }
+        </script>
+    </body>
+    </html>

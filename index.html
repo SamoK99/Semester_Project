@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body id="bodyyy">
+    <header>
+        <div id="menuButton"></div>
+        <div id="nav">
+            <div id="navbox_holder">
+                <div id="navbox1"><a href="zodiac.html"><img src="SVG/Zodiac.svg" alt="Zodiac" width="50px" height="45px"></a></div>
+                <div id="navbox2"><a href="solarsystem.html"><img src="SVG/Solar.svg" alt="Solar" width="50px" height="45px"></a></div>
+                <div id="navbox3"><a href="index.html"><img src="SVG/Discoveries.svg" alt="Discoveries" width="50px" height="45px"></a></div>
+            </div>
+            
+        </div>
+        <div id="logo"></div>
+    </header>
+    <section>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="planetPosition">
+        <div class="mercury-orbit"></div>
+        <div class="venus-orbit"></div>
+        <div class="earth-orbit"></div>
+        <div class="mars-orbit"></div>
+        <div class="jupiter-orbit"></div>
+        <div class="saturn-orbit"></div>
+        <div class="uranus-orbit"></div>
+        <div class="neptune-orbit"></div>
+
+        <div class="Star">
+            <div class="smallPlanet Mercury">
+                <img src="img/MERCURY.svg" alt="Planet Mercury">
+            </div>
+            <div class="smallPlanet Venus">
+                <img src="img/VENUS.svg" alt="Planet Venus">
+            </div>
+            <div class="smallPlanet Earth">
+                <img src="img/EARTH.svg" alt="Planet Earth">
+            </div>
+            <div class="smallPlanet Mars">
+                <img src="img/MARS.svg" alt="Planet Mars">
+            </div>
+            <div class="smallPlanet Jupiter">
+                <img src="img/JUPITER.svg" alt="Planet Jupiter">
+            </div>
+            <div class="smallPlanet Saturn">
+                <img src="img/SATURN.svg" alt="Planet Saturn">
+            </div>
+            <div class="smallPlanet Uranus">
+                <img src="img/URANUS.svg" alt="Planet Uranus">
+            </div>
+            <div class="smallPlanet Neptune">
+                <img src="img/NEPTUNE.svg" alt="Planet Neptune">
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</section>
+<footer>
+    <div id="footerbox_holder">
+        <div id="footerbox1"><h2 onclick="on()">About Us</h2><div id="overlay" onclick="off()">
+            <div id="about_infobox">
+                <h5>Creators:</h5>
+                <h5>Benjamin Olsen</h5>
+                <h5>Kristián Geci</h5>
+                <h5>Olivia Owczarczyk</h5>
+                <h5>Samuel Kuzma</h5>
+                <div id="space"></div>
+                <h5>Education:</h5>
+                <h5>1st semester Multimedia Designers</h5>
+            </div></div>
+            </div>
+        <div id="footerbox2"><a href="https://illvid.dk/"><img src="SVG/IV_logo.svg" alt="IV_logo" width="100%" height="100%"></a></div>
+        <div id="footerbox3"><h2 onclick="on2()">Contact Us</h2><div id="overlay2" onclick="off2()">
+            <div id="contact_infobox">
+                <h5>Adress: Spangsbjerg Kirkevej 103 6700</h5>
+                <h5>Country: Denmark</h5>
+                <h5>City of Residence: Esbjerg</h5>
+            </div></div>
+            
+        </div>
+        
+    </div>
+</footer>
+    <script>
+        function on() {
+          document.getElementById("overlay").style.display = "block";
+        }
+        
+        function off() {
+          document.getElementById("overlay").style.display = "none";
+        }
+        </script>
+    <script>
+        function on2() {
+          document.getElementById("overlay2").style.display = "block";
+        }
+        
+        function off2() {
+          document.getElementById("overlay2").style.display = "none";
+        }
+        </script>
+</body>
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+
+</html>
